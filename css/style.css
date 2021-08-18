@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("BebasNeueRegular"),
+    url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../fonts/BebasNeueRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,7 +20,13 @@ body {
 }
 ul,
 li,
-p {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -67,4 +83,73 @@ a {
 .navbar-phone {
   font-weight: 700;
   font-size: 17px;
+}
+/* ---------- Main ---------------------------------------------------- */
+.building {
+  padding-top: 56px;
+  display: flex;
+}
+.main-img path {
+  cursor: pointer;
+  opacity: 0;
+}
+.main-img path:hover {
+  opacity: 1;
+}
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  color: #635854;
+}
+.main-title {
+  font-size: 37px;
+  line-height: 44px;
+  text-transform: uppercase;
+  padding-top: 70px;
+}
+.counter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 0.3;
+}
+.btn {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+.btn-arrow-up {
+}
+.arrow-img {
+}
+.arrow-up {
+}
+.counter {
+  display: inline-block;
+  font-size: 126px;
+}
+.btn-arrow-down {
+}
+.arrow-down {
+  transform: rotateX(180deg);
+}
+.button-primary {
+  color: #fff;
+  background: #3596f5;
+  border-radius: 6px;
+  padding: 16px 36px;
+}
+.btn-building {
+  margin-bottom: 60px;
 }
